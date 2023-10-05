@@ -1,11 +1,10 @@
 # 1260. DFS와 BFS
 
-import sys
-sys.stdin = open('input.txt')
 V, E, N = map(int, input().split()) # V: 정점의 개수, E: 간선의 개수, N: 탐색을 시작할 정점의 번호
 data = []
 for _ in range(E):
     data.extend(list(map(int, input().split())))
+
 
 # DFS --------------------------------------------------
 dfs_route = []
@@ -47,12 +46,40 @@ def dfs(i) :  # i: 현재 탐색 중인 정점
 
 
 # BFS --------------------------------------------------
-#
+# [인접행렬]
+bfs_route = []  # 탐색 경로를 저장할 리스트
+arr2 = [[0] * (V+1) for _ in range(V+1)]
+for i in range(E):
+    ni, nj = data[2*i], data[2*i+1]
+    arr2[ni][nj] = 1
+    arr2[nj][ni] = 1
 
+# [BFS 함수]
+def bfs(i):  # i: 현재 탐색 중인 정점
+    global bfs_route
 
+    # 1. visited, Q, 시작점 인큐, 시작점 visited
+    visited = [0] * (V+1)
+    Q = []
+    Q.append(i)
+    bfs_route.append(i)  # 인큐할 때 저장하므로 경로도 저장하고 시작
+    visited[i] = 1
+    
+    # 2. BFS 탐색 시작
+    while Q:  # Q가 남아있는 동안
+
+        # 2-1. 디큐하기 ★ 탐색하기
+        front = Q.pop(0)
+        
+        # 2-2. 인큐하기
+        for i in range(1, V+1):
+            if arr2[front][i] == 1 and visited[i] == 0:  # front 노드와 i노드가 연결되어 있고 아직 방문 전이면
+                Q.append(i)     # 인큐하기
+                visited[i] = visited[front] + 1  # visited 처리(거리까지 표시하는 visited)
+                bfs_route.append(i)
 
 
 dfs(N)
-print(dfs_route)
-bfs()
-print(bfs_route)
+print(*dfs_route)
+bfs(N)
+print(*bfs_route)
