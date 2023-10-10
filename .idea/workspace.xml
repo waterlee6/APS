@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c5c0e4-3f24-4e8a-ae61-b25ac5a5b77e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1025. 제곱수 찾기.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1260. DFS와 BFS.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/s1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
