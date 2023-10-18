@@ -1,3 +1,2 @@
-# 1436. 영화감독 숌
-
-N = int(input())  # N: N번째 영화
+mylist = ['a', 'b', 'c', 'd']
+print(mylist.index('a'))
