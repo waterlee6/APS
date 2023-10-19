@@ -21,3 +21,7 @@ def find(a):
 parent = [0, 1, 2, 1, 4, 5, 1, 6]
 print(find(7))
 print(parent)
+
+# a = 'Barny'
+# b = 'Charls'
+# print(a > b)

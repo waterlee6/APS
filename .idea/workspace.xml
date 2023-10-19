@@ -8,6 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/Baekjoon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Baekjoon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1717. 집합의 표현/s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1717. 집합의 표현/경로압축_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 gosu/1717. 집합의 표현/경로압축_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/s2.py" beforeDir="false" afterPath="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/s2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2WI3eY7hSsARC0MP6w06zvDNm04" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -35,9 +43,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SSAFY\Desktop\Baekjoon\알고리즘 gosu\4195. 친구 네트워크" />
@@ -78,8 +88,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/s1.py" />
@@ -141,8 +152,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/s2.py" />
@@ -157,8 +169,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.s2" />
-        <item itemvalue="Python.s1 (1)" />
         <item itemvalue="Python.경로압축_test (1)" />
+        <item itemvalue="Python.s1 (1)" />
         <item itemvalue="Python.s1 (3)" />
         <item itemvalue="Python.s1" />
       </list>
@@ -185,7 +197,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
