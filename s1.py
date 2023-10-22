@@ -1,2 +1,2 @@
-mylist = ['a', 'b', 'c', 'd']
-print(mylist.index('a'))
+num = 12345
+print(str(num)[:-1])
