@@ -1,2 +1,2 @@
-num = 12345
-print(str(num)[:-1])
+mytuple = (1, 2, 3)
+print(mytuple[0])
