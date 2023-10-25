@@ -44,31 +44,54 @@ def find(a):
 
 
 N = int(input())  # N: 별의 개수
-stars = []  # 별의 위치를 담을 리스트
-given = []  # input을 담을 리스트
+stars = []  # input을 담을 리스트
+links = []  # 별 연결과 가중치를 담을 리스트
+min_cost = 0  # 최소 비용을 담을 변수
 parent = [i for i in range(N)]
 
 for _ in range(N):
-    given.append(tuple(map(float, input().split())))
-# print(given)  # [(1.0, 1.0), (2.0, 2.0), (2.0, 4.0)]
+    stars.append(tuple(map(float, input().split())))
 
-# 두 별 사이의 거리를 가중치로 해서 (가중치, 점 A, 점 B) 순서의 리스트 만들기
-# 주어진 점 N개에 대해서  모든 경우의 수를 다 계산?
-# -> 최대 경우의 수는 100C2 = 4950개이므로 계산 가능
+# 1. 두 별 사이의 거리를 가중치로 해서 (가중치, 점 A, 점 B) 순서의 리스트 만들기
+    # 주어진 점 N개에 대해서  모든 경우의 수를 다 계산?
+    # -> 최대 경우의 수는 100C2 = 4950개이므로 계산 가능
+    # 별의 좌표를 리스트에 넣는 것이 아니라 stars의 인덱스로 넣어서 찾기
 
+visited = []  # 중복 제거에 사용할 visited
 for a in range(N):  # 점 A
     for b in range(N):  # 점 B
         if a == b:  # 자기자신과는 연결하지 않음
             continue
+        if (b, a) in visited:  # 중복 제거? a -> b 갔으면 b -> a 안가도록?
+            continue
         else:
-            print(a, b)
+            # print(a, b)
             # 점 A(x1, y1), 점 B(x2, y2) 좌표 구하기
-            A = (given[a][0], given[a][1])
-            B = (given[b][0], given[b][1])
+            A = (stars[a][0], stars[a][1])
+            B = (stars[b][0], stars[b][1])
 
             # 두 점 사이의 거리 구하기
             dis = distance(A, B)
 
             # stars 리스트에 값을 저장하기
-            stars.append([dis, A, B])
-# print(stars)
+            links.append((dis, a, b))
+            visited.append((a, b))
+            # print(visited)
+            # print([dis, a, b])
+
+
+# 2. arr를 가중치 오름차순으로 정렬
+links.sort()
+
+# 3. 순서대로 두 정점을 연결
+for link in links:
+    w = link[0]  # 가중치
+    a = link[1]  # 첫 번째 별의 좌표
+    b = link[2]  # 두 번째 별의 좌표
+
+    # 3-1. 사이클이 발생하지 않으면
+    if find(a) != find(b):
+        union(a, b)
+        min_cost += w
+
+print(f'{min_cost:.2f}')
