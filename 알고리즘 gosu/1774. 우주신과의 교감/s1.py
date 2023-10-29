@@ -30,9 +30,9 @@ import math
 # distace 함수(두 점 사이의 거리)
 def distance(a, b):
     # a번 노드의 좌표
-    x1, y1 = locations[a][0], locations[a][1]
+    x1, y1 = gods[a][0], gods[a][1]
     # b번 노드의 좌표
-    x2, y2 = locations[b][0], locations[b][1]
+    x2, y2 = gods[b][0], gods[b][1]
 
     # 두 점 사이의 거리 구하기
     dis = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
@@ -41,22 +41,23 @@ def distance(a, b):
 
 
 N, M = map(int, input().split())  # N: 우주신들의 개수, M: 이미 연결된 신들과의 통로의 개수
-locations = [()]  # 황선자와 우주신들의 좌표를 담을 리스트
+gods = [()]  # 황선자와 우주신들의 좌표를 담을 리스트
 for _ in range(N):
-    locations.append(tuple(map(int, input().split())))
+    gods.append(tuple(map(int, input().split())))
 
-links = []
+links = []  # 이미 연결된 통로를 담을 리스트
 for _ in range(M):
     links.append(list(map(int, input().split())))
 
 min_dis = 0  # 최소 길이를 담을 변수
-# print(locations)   # [(), (1, 1), (3, 1), (2, 3), (4, 3)]
+dis = []  # 아직 연결되지 않은 두 별 사이의 거리를 저장할 리스트 (가중치, a번 노드, b번 노드)
+# print(gods)   # [(), (1, 1), (3, 1), (2, 3), (4, 3)]
 # print(links)  # [[1, 4]]
 
 
 # parent 만들기(N개)
 parent = [0] + [x for x in range(1, N+1)]  # 번호 일치 위해 0번 추가
-print(f'연결 전 parent : {parent}')
+# print(f'연결 전 parent : {parent}')
 
 # links의 이미 연결된 노드를 연결
 for link in links:
@@ -65,9 +66,33 @@ for link in links:
     union(a, b)
     min_dis += distance(a, b)  # 연결된 노드 간의 거리는 확정이므로 min_dis에 담아두기
 
-print(f'연결 후 parent : {parent}')
-print(min_dis)
+# print(f'연결 후 parent : {parent}')
+# print(min_dis)
 
 # 그다음에 이제 아직 연결 안된 애들을 연결해야 하는데...
 # 모든 경우의 수를 다 탐색?
-for i
+for i in range(1, N):
+    for j in range(i+1, N+1):
+        a, b = gods[i], gods[j]
+        # 아직 연결이 안 되어 있으면 두 점 간의 길이를 구하기
+        if find(i) != find(j):
+            dis.append((distance(i, j), i, j))
+
+# dis를 오름차순으로 정렬
+dis.sort()
+
+# 이 dis 함수에 대해서 union find 실행
+for x in dis:
+    w = x[0]
+    a = x[1]
+    b = x[2]
+    # 사이클이 아니면 유니온 실행하고 min_dis에 더함
+    if find(a) != find(b):
+        union(a, b)
+
+
+print(f'{min_dis:.2f}')
+
+
+
+
