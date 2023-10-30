@@ -50,49 +50,48 @@ for _ in range(M):
     links.append(list(map(int, input().split())))
 
 min_dis = 0  # 최소 길이를 담을 변수
-dis = []  # 아직 연결되지 않은 두 별 사이의 거리를 저장할 리스트 (가중치, a번 노드, b번 노드)
-# print(gods)   # [(), (1, 1), (3, 1), (2, 3), (4, 3)]
-# print(links)  # [[1, 4]]
+# print(f'gods : {gods}')
+# print(f'links : {links}')
 
 
-# parent 만들기(N개)
+# 1. parent 만들기(N개)
 parent = [0] + [x for x in range(1, N+1)]  # 번호 일치 위해 0번 추가
 # print(f'연결 전 parent : {parent}')
 
-# links의 이미 연결된 노드를 연결
+# 2. links의 이미 연결된 노드를 연결
 for link in links:
     a = link[0]  # a번 노드
     b = link[1]  # b번 노드
     union(a, b)
-    min_dis += distance(a, b)  # 연결된 노드 간의 거리는 확정이므로 min_dis에 담아두기
-
+    # 새로 만든 통로의 길이만 구하는 것!
+    # min_dis += distance(a, b)  # 연결된 노드 간의 거리는 확정이므로 min_dis에 담아두기
 # print(f'연결 후 parent : {parent}')
-# print(min_dis)
+# print(f'처음 min_dis : {min_dis}')
+# print('----------------------------------')
 
-# 그다음에 이제 아직 연결 안된 애들을 연결해야 하는데...
-# 모든 경우의 수를 다 탐색?
+# 3. 아직 연결 안된 노드들을 거리 순으로 정렬하기 위한 탐색
+yet_dis = []  # 아직 연결되지 않은 두 별 사이의 거리를 저장할 리스트 (가중치, a번 노드, b번 노드)
 for i in range(1, N):
     for j in range(i+1, N+1):
         a, b = gods[i], gods[j]
         # 아직 연결이 안 되어 있으면 두 점 간의 길이를 구하기
         if find(i) != find(j):
-            dis.append((distance(i, j), i, j))
+            yet_dis.append((distance(i, j), i, j))   # 가중치, 노드 번호, 노드 번호
+            # print(f'i, j : {i, j}')
+            # print(f'yet_dis : {yet_dis}')
 
-# dis를 오름차순으로 정렬
-dis.sort()
+# 4. yet_dis 오름차순으로 정렬 (거리가 짧은게 먼저 나오게)
+yet_dis.sort()
+# print(f'sorted yet_dis : {yet_dis}')
 
-# 이 dis 함수에 대해서 union find 실행
-for x in dis:
-    w = x[0]
-    a = x[1]
-    b = x[2]
+# 5. 이 dis 함수에 대해서 union find 실행
+for dis in yet_dis:
+    w = dis[0]   # 가중치 = 두 노드 간의 거리
+    i = dis[1]   # i번 노드 번호
+    j = dis[2]   # j번 노드 번호
     # 사이클이 아니면 유니온 실행하고 min_dis에 더함
-    if find(a) != find(b):
-        union(a, b)
-
+    if find(i) != find(j):
+        union(i, j)
+        min_dis += w
 
 print(f'{min_dis:.2f}')
-
-
-
-
