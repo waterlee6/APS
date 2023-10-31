@@ -1,13 +1,13 @@
 # 6497. 전력난
 
 '''
-도시의 모든 집을 방문할 수 있어야 함 -> 모든 노드가 연결되어 있어야 함
-노드를 연결하는 길의 합이 최소가 되어야 함
+조건 1) 도시의 모든 집을 방문할 수 있어야 함 -> 모든 노드가 연결되어 있어야 함
+조건 2) 노드를 연결하는 길의 합이 최소가 되어야 함
 => 최소 신장 트리로 풀기
+연결하는 최소 거리가 아니라 연결하지 않는 최대 거리를 구하는 것에 주의
 
 
-input 받는 것부터 잘 모르겠는데...
-
+# 잘못된 input 받기
 m, n = map(int, input().split())  # m: 집의 수, n: 길의 수
 arr = []  # 노드 간의 거리를 저장할 리스트
 while True:
@@ -38,22 +38,12 @@ def union(a, b):
         parent[root_a] = root_b
 
 
-# distace 함수(두 점 사이의 거리)
-import math
-def distance(a, b):
-    # a번 노드의 좌표
-    x1, y1 = gods[a][0], gods[a][1]
-    # b번 노드의 좌표
-    x2, y2 = gods[b][0], gods[b][1]
-
-    # 두 점 사이의 거리 구하기
-    dis = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
-    return dis
-
-# 1. input 받기
+# 1. input 받기 ★★★
 while True:
     m, n = map(int, input().split())  # m: 집의 수, n: 길의 수
     parent = [x for x in range(m+1)]
+    total_dis = 0  # 모든 거리 길이의 합
+    min_dis = 0    # 최소한으로 켜 둘 거리
 
     if m == 0 and n == 0:
         break
@@ -68,15 +58,23 @@ while True:
 
     # 3. 거리가 짧은 순으로정렬
     arr.sort()
+    # print(arr)
 
     # 4. 거리가 짧은 순으로 union find 수행
     for i in range(1, n+1):
         w = arr[i][0]   # w: 가중치
+        total_dis += w
         x = arr[i][1]   # x: x 노드
         y = arr[i][2]   # y: y 노드
 
         # 사이클이 아니라면
-        if
+        if find(x) != find(y):
+            union(x, y)
+            min_dis += w
+
+    # 5. for문을 다 돈 후 total_dis에서 min_dis를 빼줌
+    ans = total_dis - min_dis
+    print(ans)
         
 
 
