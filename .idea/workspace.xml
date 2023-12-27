@@ -4,39 +4,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1bd6004-840a-4b8e-9996-84db84da4a70" name="Default Changelist" comment="">
+    <list default="true" id="e5db70be-4bed-4731-8d86-67074d4dd179" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/APS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/10773. 제로/s1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Programmers/.idea/Programmers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Baekjoon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1197. 최소 스패닝 트리/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/13549. 숨바꼭질 3/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/13549. 숨바꼭질 3/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/13549. 숨바꼭질 3/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1504. 특정한 최단 경로/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1504. 특정한 최단 경로/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1717. 집합의 표현/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1717. 집합의 표현/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1717. 집합의 표현/test1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1717. 집합의 표현/경로압축_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/17472. 다리 만들기 2/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1753. 최단경로/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1753. 최단경로/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1774. 우주신과의 교감/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1976. 여행 가자/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1976. 여행 가자/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1976. 여행 가자/s2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/1976. 여행 가자/test1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/20040. 사이클 게임/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/20040. 사이클 게임/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/20040. 사이클 게임/upload.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4195. 친구 네트워크/s2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4386. 별자리 만들기/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4386. 별자리 만들기/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4386. 별자리 만들기/s2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4803. 트리/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/4803. 트리/s2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/6497. 전력난/s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/9372. 상근이의 여행/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1025. 제곱수 찾기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2798. 블랙잭.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7576. 토마토.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/17471. 게리맨더링/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/17471. 게리맨더링/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/17471. 게리맨더링/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/2105. 디저트 카페.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/2174. 로봇 시뮬레이션/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/2174. 로봇 시뮬레이션/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/input2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A형 대비/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 배우기/101~150/2908. 상수/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/단계별 풀이/1018. 체스판 다시 칠하기_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/단계별 풀이/10989. 수 정렬하기 3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/단계별 풀이/2751. 수 정렬하기 2(runtimeerror).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/단계별 풀이/2751. 수 정렬하기 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/단계별 풀이/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/단계별 풀이/스택, 큐, 덱/28278. 스택 2/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/스터디_3반 문제집/11557. Yangjojan of the year.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/스터디_3반 문제집/2754. 학점계산.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/스터디_3반 문제집/9506. 약수들의 합.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/스터디_3반 문제집/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/스터디_3반 문제집/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1717. 집합의 표현/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1717. 집합의 표현/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1717. 집합의 표현/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1717. 집합의 표현/경로압축_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1976. 여행 가자/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1976. 여행 가자/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1976. 여행 가자/s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/1976. 여행 가자/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/20040. 사이클 게임/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/20040. 사이클 게임/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/20040. 사이클 게임/upload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/4195. 친구 네트워크/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/4195. 친구 네트워크/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/유니온 파인드/4195. 친구 네트워크/s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/11404. 플로이드/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/11657. 타임머신/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/11657. 타임머신/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/13549. 숨바꼭질 3/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/13549. 숨바꼭질 3/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/13549. 숨바꼭질 3/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/1504. 특정한 최단 경로/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/1504. 특정한 최단 경로/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/1753. 최단경로/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/1753. 최단경로/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/1956. 운동/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/1956. 운동/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/1956. 운동/s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/9370. 미확인 도착지/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최단 경로/9370. 미확인 도착지/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/1197. 최소 스패닝 트리/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/17472. 다리 만들기 2/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/1774. 우주신과의 교감/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/4386. 별자리 만들기/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/4386. 별자리 만들기/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/4386. 별자리 만들기/s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/6497. 전력난/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/최소 신장 트리/9372. 상근이의 여행/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/투 포인터/1806. 부분합/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/투 포인터/1806. 부분합/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/투 포인터/1806. 부분합/s2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/투 포인터/2470. 두 용액/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/투 포인터/2470. 두 용액/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/투 포인터/3273. 두 수의 합/s1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/트리/4803. 트리/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/알고리즘 gosu/트리/4803. 트리/s2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,48 +102,59 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 0
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2XSpklmyoqud4QH0GK8nRQuapqK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="2ZuZDukzleNRtYcuV7CPawc7KqO" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/eelsm/OneDrive/바탕 화면/Baekjoon/알고리즘 gosu/1806. 부분합"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\eelsm\OneDrive\바탕 화면\Baekjoon\알고리즘 gosu\1806. 부분합" />
-      <recent name="C:\Users\eelsm\OneDrive\바탕 화면\Baekjoon\알고리즘 gosu\13549. 숨바꼭질 3" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\eelsm\OneDrive\바탕 화면\Baekjoon\단계별 풀이" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.s1 (4)">
+}</component>
+  <component name="RunManager" selected="Python.p1">
+    <configuration name="p1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="APS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/p1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="s1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Baekjoon" />
+      <module name="APS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/알고리즘 gosu/2470. 두 용액" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/9012. 괄호" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/알고리즘 gosu/2470. 두 용액/s1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/9012. 괄호/s1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,40 +163,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="s1 (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Baekjoon" />
+    <configuration name="s1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="APS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/단계별 풀이/스택, 큐, 덱/28278. 스택 2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/4949. 균형잡힌 세상" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/단계별 풀이/스택, 큐, 덱/28278. 스택 2/s1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="s1 (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Baekjoon" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python 배우기/101~150/2908. 상수" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python 배우기/101~150/2908. 상수/s1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/4949. 균형잡힌 세상/s1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,39 +185,18 @@
       <method v="2" />
     </configuration>
     <configuration name="s1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Baekjoon" />
+      <module name="APS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/알고리즘 gosu/1806. 부분합" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/10773. 제로" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/알고리즘 gosu/1806. 부분합/s1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Baekjoon" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Baekjoon/단계별 풀이/스택, 큐, 덱/10773. 제로/s1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,50 +207,22 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.s1 (4)" />
-        <item itemvalue="Python.s1 (3)" />
-        <item itemvalue="Python.s1" />
-        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.p1" />
+        <item itemvalue="Python.s1 (2)" />
         <item itemvalue="Python.s1 (1)" />
+        <item itemvalue="Python.s1" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1bd6004-840a-4b8e-9996-84db84da4a70" name="Default Changelist" comment="" />
-      <created>1698632482100</created>
+      <changelist id="e5db70be-4bed-4731-8d86-67074d4dd179" name="Changes" comment="" />
+      <created>1703273808886</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698632482100</updated>
+      <updated>1703273808886</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/알고리즘 gosu/1806. 부분합/s1.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/알고리즘 gosu/1806. 부분합/s1.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
