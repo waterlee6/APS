@@ -3,7 +3,7 @@
 며칠이 지나야 모든 토마토가 익는지
 상자의 가로, 세로에 높이까지 주어져서 3차원 같은 느낌?
 '''
-from pprint import pprint
+from pprint import pprint 
 
 m, n, h = map(int, input().split())  # n: 세로 칸 수, m: 가로 칸 수, h: 높이
 boxes = []  # 높이 1의 박스 h개를 담을 리스트
