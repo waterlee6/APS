@@ -33,7 +33,7 @@ for box in range(h):
 # 2. 변수 설정
 q = deque()
 # visited = [[[False] * m for _ in range(n)] for _ in range(h)]  # visited에는 익은 토마토를 저장?
-check = True
+end = False
 
 dx = [0, 1, 0, -1, 0, 0]  # 우하좌상+위/아래
 dy = [1, 0, -1, 0, 0, 0]
@@ -49,24 +49,30 @@ def find_ripen(q, check):
                 # 방문하지 않은 익은 토마토가 있으면 그 좌표를 q에 저장
                 if boxes[z][x][y] == 1:
                     q.append((z, x, y))
-                    print('append 함')
+                    # print('append 함')
 
-    # 더 이상 방문할 토마토가 없으면 탐색을 종료
-    else:
-        check = False
-        print('탈출함')
+    # 방문하지 않은 익은 토마토가 없으면 종료
+    if len(q) == 0:
+        end = True
+        print('탐색 종료')
+    print(f'탐색 1회 마침 : {q}')
+    # else:
+    #     check = False
+    #     print('탈출함')
 
 
 # 찾아낸 익은 토마토의 우하좌상위아래를 탐색해서 안익은 토마토를 익히는 함수
 def make_ripen(q):
     while q:
         z, x, y = q.popleft()
+        # print(z, x, y)
+        # print(f'pop 함 {q}')
         for d in range(6):  # 총 6방향이므로
              nz, nx, ny = z+dz[d], x+dx[d], y+dy[d]
              if 0 <= nz < h and 0 <= nx < n and 0 <= ny < m: # 벽 세우기
                  if boxes[nz][nx][ny] == 0:
                     boxes[nz][nx][ny] = boxes[z][x][y] + 1
-                    print('visited 표시함')
+                    print('안 익은 토마토 익힘')
 # print(boxes)
 
 
