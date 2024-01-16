@@ -33,36 +33,39 @@ for box in range(h):
 # 2. 변수 설정
 q = deque()
 # visited = [[[False] * m for _ in range(n)] for _ in range(h)]  # visited에는 익은 토마토를 저장?
-end = False
 
 dx = [0, 1, 0, -1, 0, 0]  # 우하좌상+위/아래
 dy = [1, 0, -1, 0, 0, 0]
 dz = [0, 0, 0, 0, 1, -1]
 
 
+no_more_ripen = False  # 더 이상 익은 토마토가 없음을 표시할 변수
+
 # 전체를 탐색해 익은 토마토를 찾아내 q에 넣는 함수
-def find_ripen(q, check):
+def find_ripen(q, no_more_ripen):
     for z in range(h):  # 각 층별로 확인
         for x in range(n):
             for y in range(m):
 
                 # 방문하지 않은 익은 토마토가 있으면 그 좌표를 q에 저장
                 if boxes[z][x][y] == 1:
+                    boxes[z][x][y] += 1    # 방문표시
                     q.append((z, x, y))
                     # print('append 함')
 
+    print(f'탐색 1회 마침 : {q}')
+    
     # 방문하지 않은 익은 토마토가 없으면 종료
     if len(q) == 0:
-        end = True
+        no_more_ripen = True
         print('탐색 종료')
-    print(f'탐색 1회 마침 : {q}')
-    # else:
-    #     check = False
-    #     print('탈출함')
+
 
 
 # 찾아낸 익은 토마토의 우하좌상위아래를 탐색해서 안익은 토마토를 익히는 함수
-def make_ripen(q):
+def make_ripen(q, no_more_ripen):
+
+    # q가 있으면 익은 토마토가 있음
     while q:
         z, x, y = q.popleft()
         # print(z, x, y)
@@ -72,29 +75,28 @@ def make_ripen(q):
              if 0 <= nz < h and 0 <= nx < n and 0 <= ny < m: # 벽 세우기
                  if boxes[nz][nx][ny] == 0:
                     boxes[nz][nx][ny] = boxes[z][x][y] + 1
-                    print('안 익은 토마토 익힘')
-# print(boxes)
+                    print(f'{z, x, y}의 안 익은 토마토 익힘')
+
+    # pprint(boxes)
+    # print('----------------------')
 
 
 # 3. 탐색 수행
 cnt = 0
-while cnt < 3:
+no_more_ripen = True  # 더 이상 익힐 토마토가 없음을 판단하는 변수
+
+while no_more_ripen == False:
     cnt += 1
-    find_ripen(q, check)
+    find_ripen(q, no_more_ripen)
     make_ripen(q)
-    
-# # 4. 탐색 종료 후 정답 출력하기
-# date = 0  # 날짜를 셀 변수
-# for z in range(h):
-#     for x in range(n):
-#         for y in range(m):
-#
-#             # 만약 0이 남아있다면 모든 토마토가 익지 못하는 상황이므로
-#             if boxes[z][x][y] == 0:
-#                 print(-1)
-#                 sys.exit()  # 코드 종료
-#
-#             if boxes[z][x][y] > date:
-#                 date = boxes[z][x][y]
-#
-# print(date)
+    # print(boxes)
+    # print('-----------------')
+    print(cnt)
+
+
+# 4. 탐색 종료 후 정답 출력하기
+'''
+탐색 종료일 때 boxes에 0이 남아 있으면 -1
+탐색 종료일 때 0이 없으면 횟수 출력
+처음부터 다 익어 있으면 0 출력 
+'''
