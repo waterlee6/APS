@@ -39,8 +39,6 @@ dy = [1, 0, -1, 0, 0, 0]
 dz = [0, 0, 0, 0, 1, -1]
 
 
-no_more_ripen = False  # 더 이상 익은 토마토가 없음을 표시할 변수
-
 # 전체를 탐색해 익은 토마토를 찾아내 q에 넣는 함수
 def find_ripen(q, no_more_ripen):
     for z in range(h):  # 각 층별로 확인
@@ -63,7 +61,7 @@ def find_ripen(q, no_more_ripen):
 
 
 # 찾아낸 익은 토마토의 우하좌상위아래를 탐색해서 안익은 토마토를 익히는 함수
-def make_ripen(q, no_more_ripen):
+def make_ripen(q):
 
     # q가 있으면 익은 토마토가 있음
     while q:
@@ -76,6 +74,7 @@ def make_ripen(q, no_more_ripen):
                  if boxes[nz][nx][ny] == 0:
                     boxes[nz][nx][ny] = boxes[z][x][y] + 1
                     print(f'{z, x, y}의 안 익은 토마토 익힘')
+        pprint(boxes)
 
     # pprint(boxes)
     # print('----------------------')
@@ -83,9 +82,9 @@ def make_ripen(q, no_more_ripen):
 
 # 3. 탐색 수행
 cnt = 0
-no_more_ripen = True  # 더 이상 익힐 토마토가 없음을 판단하는 변수
+no_more_ripen = False  # 더 이상 익힐 토마토가 없음을 판단하는 변수
 
-while no_more_ripen == False:
+while cnt < 4:
     cnt += 1
     find_ripen(q, no_more_ripen)
     make_ripen(q)
