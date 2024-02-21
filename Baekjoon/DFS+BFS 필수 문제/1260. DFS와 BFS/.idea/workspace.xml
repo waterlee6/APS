@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6e22c68-4e3b-4289-9ef0-0903a4417911" name="Changes" comment="" />
+    <list default="true" id="52be8339-7a74-413a-ad36-440a6fb4edea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pythonProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pythonProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pythonProject/.idea/pythonProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pythonProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pythonProject/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
+  "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2ccOt3f3B9QvzNuteppg6dYMU6s" />
+  <component name="ProjectId" id="2ceYgfHWjyOup6g9alGbgRpMom9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,11 +43,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a6e22c68-4e3b-4289-9ef0-0903a4417911" name="Changes" comment="" />
-      <created>1708407611959</created>
+      <changelist id="52be8339-7a74-413a-ad36-440a6fb4edea" name="Changes" comment="" />
+      <created>1708473623161</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708407611959</updated>
+      <updated>1708473623161</updated>
     </task>
     <servers />
   </component>
