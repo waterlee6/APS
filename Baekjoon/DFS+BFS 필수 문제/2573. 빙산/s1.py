@@ -10,22 +10,19 @@
 from pprint import pprint
 from collections import deque
 import sys
-sys.stdin = open('input.txt')
-# input = sys.stdin.readline
+# sys.stdin = open('input.txt')
+input = sys.stdin.readline
 
 N, M = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(N)]
+year = 0     # 연도를 셀 변수 
 
 # 델타탐색 방향
 di = [0, 1, 0, -1]
 dj = [1, 0, -1, 0]
 
-surroundedby = [[0] * M for _ in range(N)]  # 주위 바다의 개수를 표시할 배열
-year = 0     # 연도를 셀 변수
-iceburg= 0   # 빙산의 개수를 셀 변수
 
-
-# 빙하 주변의 바다를 찾는 함수
+# [빙하 주변의 바다를 찾는 함수]
 def finding(arr, surroundedby):
     for i in range(N):
         for j in range(M):
@@ -33,88 +30,82 @@ def finding(arr, surroundedby):
                 ni, nj = i+di[d], j+dj[d]
 
                 # 벽 세우기
-                if 0 <= ni < N and 0 <= nj < M and arr[ni][nj] == 0 and arr[i][j] > 0:
+                if 0 <= ni < N and 0 <= nj < M and arr[ni][nj] <= 0 and arr[i][j] > 0:
                     surroundedby[i][j] += 1
 
-# 빙하를 녹이는 함수
+
+# [빙하를 녹이는 함수]
+# 더 이상 녹일 빙하가 없을 때를 구분하는 flag를 return 하도록 작성 
 def melting(arr, surroundedby):
+    no_more_melting = True  # 더 이상 녹일 빙하가 없는지 확인 위한 변수(매번 True로 초기화)
     for i in range (N):
         for j in range(M):
             if surroundedby[i][j] != 0 and arr[i][j] > 0:
+                no_more_melting = False   # 하나라도 녹이면 녹일 빙하가 있는 것 
                 arr[i][j] -= surroundedby[i][j]
+    return no_more_melting
 
-# 몇 개의 덩어리인지 확인하는 함수
-no_more_search = False
 
+# [몇 개의 덩어리인지 확인해서 정답을 출력하는 함수]
 def counting():
-    global iceburg, year, no_more_search
-    visited = [[0] * M for _ in range(N)]
-    q = deque()
-
-    year += 1
-    # print('year +1 ===============')
-    finding(arr, surroundedby)
-    print('finding 함수 실행')
-    # pprint(surroundedby)
-    melting(arr, surroundedby)
-    print('melting 함수 실행')
-    # pprint(arr)
-
-    while True:
-        # 1. 아직 방문하지 않은 빙하 찾아서 q에 넣기
-        check = False
-        for i in range(N):
-            for j in range(M):
-                if arr[i][j] > 0 and visited[i][j] == 0:
-                    q.append((i, j))
-                    visited[i][j] = 1  # 찾을 때 방문처리 
-                    print(f'{(i, j)}번째 좌표 찾음')
-                    iceburg += 1       # 새로운 지점 찾을 때 iceburg +1
-                    print('iceburg +1')
-                    check = True
-                    break
-            if check == True:
-                break  # for문 break?? 
-        else:
-            print('못 찾아서 끝남')
-            no_more_search = True
-            break  # while문 break??
-
-        # 2. 연결된 빙하들을 찾아서 방문표시 하기
-        print(f'여기까지는 옴 {q}')
-        while q:
-            i, j = q.popleft()
-            print(f'{(i, j)}를 탐색')
-            for d in range(4):
-                ni, nj = i+di[d], j+dj[d]
-                if 0 <= ni < N and 0 <= nj < M and visited[ni][nj] == 0 and arr[ni][nj] > 0:
-                    q.append((ni, nj))
-                    print('새로 append 함', q)
-                    visited[ni][nj] = 1  # 찾을 때 방문처리 
+    global arr, year
+    enough_iceburg = False  # 빙하의 개수가 2개 이상임 확인 위한 변수 
     
+    # iceburg가 2개 이상이면 while문 종료
+    while enough_iceburg == False:
+        year += 1 
+        iceburg = 0               # 빙산의 개수 초기화 
+        enough_iceburg = False    # 빙산이 2개 이상인지 확인할 flag
 
-while True:
-    counting()
-    if iceburg >= 2:
-        # print('iceburg 개수 달성으로 종료')
-        print(year)
-        break
-    elif no_more_search == True:
-        print(0)
-        break
+        # visited, q, surroundedby 배열은 매번 초기화
+        visited = [[0] * M for _ in range(N)]
+        q = deque()
+        surroundedby = [[0] * M for _ in range(N)]  # 주위 바다의 개수를 표시할 배열
 
+        # finding 함수 실행
+        finding(arr, surroundedby)
 
+        # melting 함수 실행, return 값을 변수에 저장
+        no_more_melting = melting(arr, surroundedby)
+     
 
-# print('원래 arr')
-# pprint(arr)
+        # 빙하가 2개 이상이 되지 않았지만 더 이상 녹일 빙하가 없으면 탈출
+        if no_more_melting == True:
+            break  # while문 탈출 
+        
+        # 몇 개의 덩어리인지 확인하는 부분
+        while enough_iceburg == False:
+            # 1. 아직 방문하지 않은 빙하 찾아서 q에 넣기
+            start_search = False   # 탐색을 시작할 첫번째 빙하를 찾았는지 확인 위한 변수
+            for i in range(N):
+                for j in range(M):
+                    if arr[i][j] > 0 and visited[i][j] == 0:
+                        q.append((i, j))
+                        visited[i][j] = 1    # 디큐할 때가 아니라 인큐할 때 방문처리 
+                        iceburg += 1         # 새로운 지점 찾을 때 iceburg +1
+                        if iceburg >= 2:
+                            enough_iceburg = True
+                        start_search = True  # 탐색을 시작할 첫번째 빙하를 찾으면 j for문 break
+                        break
+                if start_search == True:
+                    break                    # i for문 break
+            else:                            # for문을 다 도는 동안 start_search가 False이면 더 이상 탐색할 빙하 없음 
+                break                        # while문 break
 
-# print('원래 surroundedby')
-# pprint(surroundedby)
+            # 2. start_search=True일 때 연결된 빙하들을 찾아서 q에 넣고 방문표시 하기
+            while q:
+                i, j = q.popleft()
+                for d in range(4):
+                    ni, nj = i+di[d], j+dj[d]
+                    if 0 <= ni < N and 0 <= nj < M and visited[ni][nj] == 0 and arr[ni][nj] > 0:
+                        q.append((ni, nj))
+                        visited[ni][nj] = 1  # 디큐할 때가 아니라 인큐할 때 방문처리 
+    
+    return iceburg
 
-# finding(arr, surroundedby)
-# print('fiding 다음 surroundedby')
-# pprint(surroundedby)
+iceburg = counting()
 
-# melting(arr, surroundedby)
-# print('melting 다음 arr')
-# pprint(arr)
+if iceburg >= 2:
+    print(year)
+else:
+    print(0)
